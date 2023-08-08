@@ -46,8 +46,7 @@ terraform apply
 
 After apply, you can go to CloudWatch switch to the same region where your EKS cluster is running, then from the left hand side choose `Insights -> Container Insights`, there choose the `Performance montoring` from the drop down, choose the `cluster name` and you will see the metrics shown on the dashboard:
 
-
-<img width="1936" alt="Screenshot 2023-03-19 at 12 04 45" src="https://user-images.githubusercontent.com/10175027/226172947-f8588ed3-3751-47c1-a3ed-fb4c2d4d847e.png">
+<img width="1461" alt="Screenshot 2023-08-02 at 11.32.28 AM" src="https://github.com/RJrocks/terraform-aws-observability-accelerator/assets/5756583/80e5073b-0b03-44e6-bd47-e845506263ab">
 
 
 ## Cleanup
