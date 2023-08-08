@@ -13,8 +13,8 @@ data "aws_eks_cluster_auth" "cluster" {
 }
 
 locals {
-  
-  eks_oidc_issuer_url  = replace(data.aws_eks_cluster.eks_cluster.identity[0].oidc[0].issuer, "https://", "")
+
+  eks_oidc_issuer_url = replace(data.aws_eks_cluster.eks_cluster.identity[0].oidc[0].issuer, "https://", "")
 
   context = {
     aws_caller_identity_account_id = data.aws_caller_identity.current.account_id

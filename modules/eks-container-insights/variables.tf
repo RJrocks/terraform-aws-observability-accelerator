@@ -11,15 +11,15 @@ variable "manage_via_gitops" {
 }
 
 variable "service_receivers" {
-  type = string
+  type        = string
   description = "receiver for adot-ci setup"
-  default = "[\"awscontainerinsightreceiver\"]"
+  default     = "[\"awscontainerinsightreceiver\"]"
 }
 
 variable "service_exporters" {
-    type = string
-    description = "exporter for adot-ci setup"
-    default = "[\"awsemf\"]"
+  type        = string
+  description = "exporter for adot-ci setup"
+  default     = "[\"awsemf\"]"
 }
 
 variable "irsa_policies" {
@@ -53,7 +53,6 @@ variable "irsa_iam_permissions_boundary" {
 
 variable "adot_otel_helm_chart_verison" {
   description = "ADOT collector helm chart version"
-  type = string
-  default = "0.17.0"
+  type        = string
+  default     = "0.17.0"
 }
-
